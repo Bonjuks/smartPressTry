@@ -1,0 +1,845 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  border-bottom: solid #e2e2e2b9 1px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+}
+
+.logo {
+  content: url(smartpress-logo-blue-horizontal-png.png);
+  width: 12.5rem;
+  padding-left: 1.5rem;
+  transition: 0.3s ease-out;
+}
+.logo--medium {
+  content: url(logo.png);
+  height: 35px;
+  display: none;
+}
+
+.logo:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.col1 {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.col2 {
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 0.7rem;
+  font-family: "DIN Next W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding-right: 1rem;
+  letter-spacing: 0.2rem;
+  margin-top: 0.9rem;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #666666;
+  opacity: 0.8;
+}
+
+nav li a:hover {
+  color: #1e8acf;
+}
+.search__tablet {
+  display: none;
+}
+
+.search {
+  height: 2rem;
+  width: 15vw;
+  cursor: pointer;
+  border-bottom: solid 2px #1e8acf;
+  overflow: hidden;
+}
+
+.search:hover {
+  transition: 0.3s;
+  border-bottom: solid 4px #1e8acf;
+}
+.search .fa-search {
+  color: #459ed8;
+  float: right;
+}
+
+.search .search-textbox:hover {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  width: 10vw;
+}
+
+.search input::placeholder {
+  color: #459ed8;
+  font-style: italic;
+}
+
+.cart {
+  margin: auto 0.5rem;
+}
+.sign-in {
+  background-color: #f7f7f7;
+  height: 100%;
+  width: 7rem;
+  text-align: center;
+  padding-top: 0.8rem;
+  cursor: pointer;
+}
+.sign-in a {
+  /* padding:17px 25px; */
+  text-decoration: none;
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: 0.5s ease-out;
+
+  margin-left: 0.5rem;
+}
+
+.sign-in .fa-user {
+  font-size: 1rem;
+  color: #666666;
+}
+
+.sign-in a:hover {
+  transition: 0.5s;
+  background-color: #ebebeb;
+}
+
+/* ------------------------------------HEADER END---------------------------------- */
+/* ------------------------------------BODY START---------------------------------- */
+
+.welcome {
+  margin-bottom: 10%;
+}
+.Mcol1 {
+  width: 40%;
+}
+
+.Mcol1 p {
+  margin-bottom: 0.1rem;
+  font: 16px/24px "DIN Next W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 50;
+  margin-left: 5vw;
+  color: #333;
+}
+
+.Mcol1 h1 {
+  font: 7vw/6.5vw "DIN Condensed", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+
+  color: #333333;
+  margin: 25% 0 0 5vw;
+}
+
+.Mcol1 a {
+  font: 14px/15px "DIN Next W04", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 1rem;
+  position: absolute;
+  text-decoration: none;
+  color: #007ac9;
+  border: solid 2px #1e8acf;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  padding: 14px 15px;
+  margin: 2vh 0 0 5vw;
+  transition: 0.2s ease-out;
+}
+
+.Mcol1 a:hover {
+  transition: 0.2s;
+  background-color: #1e8acf;
+  color: white;
+}
+
+.Mcol2 {
+  position: absolute;
+  top: 3.5rem;
+  left: 39.5vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.con img {
+  width: 100%;
+}
+
+.con {
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 1rem;
+  padding: 0;
+}
+
+.con a {
+  position: absolute;
+  margin: 0;
+  opacity: 0.9;
+
+  right: 0.8rem;
+  bottom: 0.8rem;
+  background-color: white;
+  text-decoration: none;
+  font: 12px/20px "DIN Next W04", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #007ac9;
+
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.brand {
+  width: 100%;
+  justify-content: center;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.brandCon {
+  width: 100%;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  justify-content: space-around;
+}
+.brand p {
+  font: 11px/20px "DIN Next W04", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #666666;
+  width: 100%;
+}
+
+.brandico img {
+  height: 7.1rem;
+  width: auto;
+}
+
+.carousel {
+  position: relative;
+  height: 50rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel__btn {
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  z-index: 2;
+}
+
+.carousel__image {
+  position: relative;
+  display: block;
+  object-fit: cover;
+  object-position: 0% 0%;
+  height: 37.5rem;
+  width: 100vw;
+}
+
+.carousel__track {
+  position: relative;
+  display: flex;
+  max-width: 500vw;
+  width: auto;
+}
+
+.carousel__track.transition {
+  transition: all 0.4s ease-in-out;
+  pointer-events: none;
+}
+
+.carousel__slide {
+  max-width: 100%;
+}
+
+.carousel button {
+  height: 4rem;
+  width: 4rem;
+  background-color: #1e8acf;
+  border: none;
+  font-size: 2.7rem;
+  color: white;
+  box-shadow: 1px 1px 2px #666666;
+  transition: 0.3s ease-in-out;
+}
+
+.carousel button:hover {
+  background-color: white;
+  color: #1e8acf;
+}
+
+.carousel__ad1 {
+  position: relative;
+}
+
+.carousel__quote-content {
+  position: absolute;
+  background-color: #333333;
+  padding-top: 3rem;
+  height: 45vh;
+  width: 60rem;
+  top: 65%;
+  right: 0;
+}
+
+.carousel__quote {
+  font: italic 28px/52px Didot, Georgia, serif;
+  font-size: 1.5vw;
+  color: white;
+  padding: 5%;
+  letter-spacing: 0.05em;
+  line-height: 200%;
+}
+
+.carousel__author {
+  top: 70%;
+  padding-left: 5%;
+  text-transform: uppercase;
+  font: 18px/22px "DIN Next W04", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.85vw;
+  color: white;
+  letter-spacing: 0.09em;
+}
+
+.carousel__lilshit {
+  top: 77%;
+  padding-left: 5%;
+  font: 11px/16px "DIN Next W04", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-size: 0.5vw;
+}
+
+.card {
+  position: relative;
+  z-index: -3;
+  border: 0;
+  margin: 0 6% 0 6%;
+  margin-bottom: 7rem;
+  margin-top: 7rem;
+}
+
+.card-con {
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  vertical-align: top;
+}
+
+.fa-globe {
+  font-size: 3rem;
+}
+
+.fa-users {
+  font-size: 3rem;
+}
+
+.fa-leaf {
+  font-size: 3rem;
+}
+
+.con-text b {
+  color: #666;
+  font-style: bold;
+  font: 12px/20px "DIN Next W04", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.con-text p {
+  margin-right: 3rem;
+  font: 16px/24px "DIN Next W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  letter-spacing: 0.03em;
+}
+
+.f-services {
+  position: relative;
+  width: 100%;
+}
+
+.f-services h1 {
+  margin-left: 6.5rem;
+  font: 35px/43px Didot, Georgia, serif;
+  color: #333;
+  margin-bottom: 3rem;
+  letter-spacing: -0.0111em;
+}
+.f-services-con {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5rem 0 5rem;
+}
+.f-services-con img {
+  width: 20.8vw;
+}
+
+.f-services-con-img-text {
+  padding: 20px 1rem;
+  width: 100%;
+  font: 12px/20px "DIN Next W04", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #007ac9;
+  font-weight: 650;
+  font-size: 0.9rem;
+}
+
+.subscribe {
+  margin: 4.5rem;
+}
+
+.subscribe p {
+  text-transform: uppercase;
+  color: #666666;
+  margin-bottom: 2rem;
+}
+.subscribe h1 {
+  font: 54px/67px Didot, Georgia, serif;
+  color: #333;
+  letter-spacing: -0.0111em;
+}
+.subscribe .subscribe-textbox {
+  margin-left: 23vw;
+  height: 2rem;
+  width: 30vw;
+  border-bottom: solid 2px #1e8acf;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.fa-arrow-right {
+  float: right;
+  color: #459ed8;
+  font-size: 1.2rem;
+}
+
+.subscribe-textbox input {
+  border: 0;
+  outline: 0;
+}
+
+.subscribe-textbox:hover {
+  transition: 0.2s;
+  border-bottom: solid 4px #1e8acf;
+}
+/* ------------------------------------BODY END-------------------------------------- */
+/* ----------------------------------FOOTER START------------------------------------ */
+footer {
+  background-color: #f7f7f7;
+}
+.blank {
+  display: none;
+}
+.foot1 {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  justify-content: center;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.foot1 a {
+  text-decoration: none;
+  font: 15px/16px "DIN Next W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+.foot1 .adress p {
+  line-height: 1rem;
+}
+
+.foot1 a:hover {
+  transition: 0.3s;
+  color: #1e8acf;
+}
+.adress img {
+  width: 3.5rem;
+  margin-bottom: 3rem;
+}
+.fa-thumbs-up {
+  font-size: 3.5rem;
+}
+
+.foot1 .connect .fab {
+  font-size: 1.7rem;
+}
+
+.subscribe-textbox {
+  height: 2rem;
+  width: 20vw;
+  border-bottom: solid 2px #1e8acf;
+  overflow: hidden;
+}
+.subscribe-textbox input {
+  background-color: transparent;
+  width: 90%;
+}
+
+.subscribe-textbox input[type="text"] {
+  color: #459ed8;
+  font-style: italic;
+}
+.foot2 hr {
+  width: 95%;
+  margin: auto;
+  color: white;
+  height: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+  .Mcol1 {
+    margin: 5rem 0 0 2rem;
+    width: 80%;
+  }
+  .Mcol1 h1 {
+    font-size: 11vw;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0;
+  }
+  .Mcol1 a {
+    margin: 0.5rem 0 0 0.5rem;
+  }
+  .Mcol1 p {
+    margin: 0 0 0 0.5rem;
+  }
+  .Mcol2 {
+    position: relative;
+    left: 0;
+  }
+  .Mcol2 {
+    grid-template-columns: auto auto;
+    margin: 0 5% 0 2%;
+  }
+  .carousel {
+    margin-bottom: -2rem;
+  }
+  .carousel__image {
+    height: auto;
+  }
+  .carousel__quote-content {
+    top: 100%;
+    padding-top: 1rem;
+    width: 100%;
+    height: 20rem;
+  }
+  .carousel__quote {
+    font-size: 1.3rem;
+  }
+  .carousel__author {
+    font-size: 0.9rem;
+  }
+  .carousel__lilshit {
+    font-size: 0.7rem;
+  }
+  .f-services-con {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  .f-services-con img {
+    width: 42vw;
+  }
+
+  .sign-in {
+    width: 3.5rem;
+  }
+  .sign-in a {
+    font-size: 0;
+    margin-right: 0.7rem;
+  }
+  .search {
+    font-size: 0;
+    border: none;
+  }
+  .search:hover {
+    border: none;
+  }
+  .search .fa-search {
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: grey;
+  }
+  .search__tablet {
+    position: absolute;
+    display: inline;
+    top: 3.5rem;
+    left: -100%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+  }
+  .search__tablet h1 {
+    font: 35px/43px Didot, Georgia, serif;
+    margin: 5rem 0 0 5%;
+  }
+  .search__tablet hr {
+    border: solid 2px grey;
+    width: 3.5rem;
+    margin: 2rem 0 0 5%;
+  }
+  .search__tablet .search-textbox {
+    margin: 2rem 0 0 5%;
+    border-bottom: solid 2px blue;
+    width: 90%;
+    transition: 0.3s ease-in-out;
+  }
+  .search__tablet .search-textbox:hover {
+    border-bottom: solid 4px blue;
+  }
+  .search__tablet input {
+    border: none;
+    outline: none;
+    width: 100%;
+
+    line-height: 2.5rem;
+    /* transition: .3s ease-in-out; */
+  }
+  .search__tablet .fas {
+    margin: 0 0 0 -1.5rem;
+    color: #459ed8;
+  }
+  .search__tablet input::placeholder {
+    color: #459ed8;
+    font-style: italic;
+  }
+  .search__tablet input[type="text"] {
+    color: #459ed8;
+    font-style: italic;
+    transition: 0.3s;
+  }
+  .search__tablet input[type="text"]:hover {
+    opacity: 0.3;
+  }
+  .cart {
+    margin-top: 0.6rem;
+    margin-right: 0.7rem;
+  }
+  .logo {
+    display: none;
+  }
+  .logo--medium {
+    cursor: pointer;
+    display: unset;
+    margin-left: 20px;
+  }
+
+  .logo--medium:hover {
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav__main {
+    position: absolute;
+    top: 3.5rem;
+    left: -50%;
+    transform: translateX(-50%);
+    background: white;
+    opacity: 0.98;
+    width: 100%;
+    height: 100vh;
+  }
+
+  nav ul {
+    position: relative;
+    flex-direction: column;
+    top: 20%;
+    align-items: center;
+  }
+  nav li {
+    margin-bottom: 1.7rem;
+    font-size: 1rem;
+  }
+  nav li a:active {
+    color: #1e8acf;
+  }
+  .hamburger__btn {
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    width: 25px;
+    height: 3px;
+    background: #007ac9;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+  }
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    background: #007ac9;
+    transition: all 0.4s ease-in-out;
+  }
+  .hamburger::before {
+    transform: translateY(-8px);
+  }
+  .hamburger::after {
+    transform: translateY(8px);
+  }
+
+  .hamburger__btn.open .hamburger {
+    background: transparent;
+  }
+  .hamburger__btn.open .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .hamburger__btn.open .hamburger::after {
+    transform: rotate(-135deg);
+  }
+  .transition {
+    transition: all 0.4s ease-in-out;
+  }
+  .brandCon {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .brand {
+    overflow: hidden;
+  }
+  .brandico {
+    width: 33%;
+  }
+  .brandico img {
+    height: 6rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .subscribe {
+    margin: 4.5rem 0 3rem 3rem;
+  }
+  .subscribe h1 {
+    width: 100%;
+  }
+  .subscribe .subscribe-textbox {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  .foot1 {
+    grid-template-columns: 50% 50%;
+  }
+  .blank {
+    display: block;
+  }
+  .subscribe-textbox {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Mcol2 {
+    grid-template-columns: 100%;
+  }
+  .carousel__image {
+    height: 20rem;
+  }
+  .card-con {
+    display: block;
+  }
+  .con-text {
+    margin-bottom: 4rem;
+  }
+  .f-services h1 {
+    margin-left: 2.5rem;
+  }
+  .f-services-con {
+    grid-template-columns: auto;
+  }
+  .f-services-con img {
+    width: 85vw;
+  }
+  .f-services-con-img {
+    margin-bottom: 4rem;
+  }
+  .subscribe h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+  .subscribe .subscribe-textbox {
+    width: 90%;
+    margin: 0;
+  }
+  .foot1 {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  .foot1 .fas {
+    margin-bottom: 3rem;
+  }
+  .foot1 h1 {
+    margin-bottom: 2rem;
+  }
+  .Products,
+  .About,
+  .Support {
+    margin-bottom: 3rem;
+  }
+  .blank {
+    display: none;
+  }
+  .foot2 {
+    text-align: center;
+  }
+  .subscribe-textbox {
+    width: 80vw;
+  }
+}
